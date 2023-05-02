@@ -1,0 +1,17 @@
+string = input("Digite uma string para ser invertida: ")
+
+lista_caracteres = list(string)
+
+
+i = 0
+j = len(lista_caracteres) - 1
+
+
+while i < j:
+    lista_caracteres[i], lista_caracteres[j] = lista_caracteres[j], lista_caracteres[i]
+    i += 1
+    j -= 1
+
+string_invertida = "".join(lista_caracteres)
+
+print("A string invertida é:", string_invertida)
